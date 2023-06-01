@@ -34,7 +34,7 @@ struct ContentView: View {
                                 .frame(width: 20, height: 30)
                             Text("\(deck.cardsCount(card: card))")
                             Text(" \(deck.probability(card: card), specifier: "%.2f")")
-                            
+                            //出現確率の色設定
                                 .foregroundColor(getColorForProbability(card: card, probability: deck.probability(card: card)))
                         }
                         .padding()
